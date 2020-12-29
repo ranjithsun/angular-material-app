@@ -1,0 +1,20 @@
+.outer-wrapper{
+    width: 100%;
+    margin: auto;
+
+    .inner-wrapper{
+        max-width: 1340px;
+        margin: auto;
+
+        .content-body{
+            display: flex;
+
+            .sidenav{
+                flex: 1;
+            }
+            .content{
+                flex: 3;
+            }
+        }
+    }
+}

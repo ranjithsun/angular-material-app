@@ -1,0 +1,10 @@
+<app-failed-launches-select 
+  *ngIf="launchpadData && launchpadData.loading==false"
+  [launchpadData]=launchpadData 
+  (selectedLaunchPad)="getFailedLaunches($event)" >
+</app-failed-launches-select>
+
+<app-failed-launches-list
+  *ngIf="failedLaunchsData && failedLaunchsData.loading==false"
+  [failedLaunchsData]=failedLaunchsData
+></app-failed-launches-list>

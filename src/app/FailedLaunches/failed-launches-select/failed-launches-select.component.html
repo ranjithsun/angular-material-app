@@ -1,0 +1,11 @@
+<div *ngIf="launchpads">
+    <mat-form-field>
+        <mat-label>Select Launchpad :</mat-label>
+        <mat-select (selectionChange)="onSelectLaunchPad(selectLaunchpad.value)" #selectLaunchpad >
+        <mat-option [value]=""> Select Launchpad </mat-option>
+        <mat-option *ngFor="let launchpad of launchpads" [value]="launchpad.id">
+            {{launchpad.launchpad}}
+        </mat-option>
+        </mat-select>
+    </mat-form-field>
+</div>
